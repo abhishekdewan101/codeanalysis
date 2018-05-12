@@ -1,0 +1,10 @@
+{
+    "rules" :[
+        "https",
+        "http"
+    ],
+    "ignore" : [
+        "import",
+        "okhttp"
+    ]
+}
