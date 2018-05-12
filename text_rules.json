@@ -5,6 +5,7 @@
     ],
     "ignore" : [
         "import",
-        "okhttp"
+        "okhttp",
+        "*"
     ]
 }

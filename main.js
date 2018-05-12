@@ -17,9 +17,13 @@ function startCodeAnalysis() {
     console.log("Provide me the path to the directory to be analyzed:")
     let stdin = process.openStdin();
     stdin.addListener('data', function(data){
-        filePath = data.toString().trim();
-        setupRules();
-        process.closeStdin();
+        if (data.length < 10) {
+            process.exit();
+            return;
+        } else {
+            filePath = data.toString().trim();
+            setupRules();
+        }
     });
 }
 
